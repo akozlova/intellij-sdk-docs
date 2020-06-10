@@ -77,6 +77,9 @@ Support for JavaFX deprecated
 `com.maddyhome.idea.copyright.util.FileTypeUtil.getFileTypeByName(String)` method removed
 : This was an internal utility method not intended for use in plugins. Use `FileTypeManager.getInstance().findFileTypeByName()` instead.
 
+`com.intellij.pom.java.LanguageLevel.JDK_13_PREVIEW` constant was removeed
+: According to the contract, IntelliJ IDEA supports preview language levels from the latest java release (for the 2020.2 version it is Java 14) and from the upcoming java release (Java 15). Use `com.intellij.pom.java.LanguageLevel.JDK_14 (_PREVIEW)` or remove code which supported outdated java preview versions
+
 `javassist` package removed
 : [Javassist](https://github.com/jboss-javassist/javassist) library was removed, bundle it with your plugin instead.
 
